@@ -58,30 +58,28 @@ let milli = () => {
 };
 
 startBtn.addEventListener("click", () => {
-  if (time === 0) {
-    if (
-      +inputHour.value === 0 &&
-      +inputMinut.value === 0 &&
-      +inputSekunt.value === 0
-    ) {
-      error.style.opacity = "99";
-      error.innerHTML = "Son kiritmadingiz !!!";
-    } else {
-      error.innerHTML = ".";
-      error.style.opacity = "0";
-
+  if (
+    +inputHour.value === 0 &&
+    +inputMinut.value === 0 &&
+    +inputSekunt.value === 0
+  ) {
+    error.style.opacity = "99";
+    error.innerHTML = "Son kiritmadingiz !!!";
+  } else {
+    error.innerHTML = ".";
+    error.style.opacity = "0";
+    if (time === 0) {
       time = +inputHour.value * 3600;
       time += +inputMinut.value * 60;
       time += +inputSekunt.value;
-
-      inputHour.value = Math.floor(time / 3600);
-      inputMinut.value = Math.floor((time / 60) % 60);
-      inputSekunt.value = Math.floor(time % 60);
     }
-  }
 
-  clearInterval(interval);
-  interval = setInterval(milli, 1000);
+    inputHour.value = Math.floor(time / 3600);
+    inputMinut.value = Math.floor((time / 60) % 60);
+    inputSekunt.value = Math.floor(time % 60);
+    clearInterval(interval);
+    interval = setInterval(milli, 1000);
+  }
 });
 
 // stop button
