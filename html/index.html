@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link-css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards">
+        <div class="card-input">
+          <input type="text" placeholder="hour" class="inputHour" />
+          <input type="text" placeholder="minut" class="inputMinut" />
+          <input type="text" placeholder="sekunt" class="inputSekunt" />
+        </div>
+        <div class="card-timer">
+          <span class="soat spanTimer">00</span>
+          <span class="spanTimer">:</span>
+          <span class="minut spanTimer">00</span>
+          <span class="spanTimer">:</span>
+          <span class="sekunt spanTimer">00</span>
+        </div>
+
+        <div>
+          <p class="error">.</p>
+        </div>
+
+        <audio controls class="audio">
+          <source
+            src="../img/mixkit-female-microphone-countdown-341.wav"
+            type="audio/ogg"
+          />
+          <source
+            src="../img/mixkit-female-microphone-countdown-341.wav"
+            type="audio/mpeg"
+          />
+        </audio>
+
+        <div class="cardButton">
+          <button class="start all-button">Start</button>
+          <button class="stop all-button">Stop</button>
+          <button class="reset all-button">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================== -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

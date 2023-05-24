@@ -1,0 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.all-button {
+  background-color: black;
+  padding: 7px 15px;
+  color: white;
+}
+
+.container {
+  background-color: #080a14;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px #87ff4a;
+  background-color: #080a14;
+  border-radius: 20px;
+  padding: 20px;
+  width: 600px;
+  height: 450px;
+}
+
+.card-input {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.card-input input {
+  max-width: 130px;
+  height: 40px;
+  font-size: 15px;
+  background-color: #080a14;
+  border: 2px solid white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  color: #87ff4a;
+  box-shadow: 0 0 15px #87ff4a;
+  transition: 0.4s;
+}
+
+.error {
+  color: #87ff4a;
+  font-size: 23px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  border-bottom: 1px solid #87ff4a;
+  opacity: 0;
+}
+
+.card-timer {
+  display: flex;
+  gap: 25px;
+  background-color: black;
+  color: white;
+  padding: 30px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #87ff4a;
+}
+.card-timer .spanTimer {
+  font-size: 50px;
+  color: #87ff4a;
+}
+
+.cardButton {
+  padding: 0 50px;
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+}
+.cardButton button {
+  min-width: 130px;
+  height: 40px;
+  font-size: 15px;
+  background-color: #080a14;
+  border: 2px solid white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  color: #87ff4a;
+  box-shadow: 0 0 15px #87ff4a;
+  transition: 0.4s;
+}
+.cardButton button:hover {
+  box-shadow: 0 0 25px #87ff4a;
+  background-color: #87ff4a;
+  color: white;
+  transition: 0.4s;
+}
+.cardButton button:active {
+  transform: scale(0.9);
+}
+
+/*# sourceMappingURL=style.css.map */
