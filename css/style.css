@@ -36,7 +36,6 @@ body {
   border-radius: 20px;
   padding: 20px;
   width: 600px;
-  height: 450px;
 }
 
 .card-input {
@@ -113,6 +112,40 @@ body {
 }
 .cardButton button:active {
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 550px) {
+  .cards {
+    width: 330px;
+  }
+  .card-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-input input {
+    max-width: 87px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .card-timer {
+    padding: 15px;
+  }
+  .card-timer .spanTimer {
+    font-size: 19px;
+  }
+  .cardButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cardButton button {
+    min-width: 87px;
+    font-size: 10px;
+  }
+  .error {
+    font-size: 17px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
